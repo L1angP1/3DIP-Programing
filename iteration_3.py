@@ -781,7 +781,7 @@ class CareerAdvisorGUI:
             messagebox.showerror("Error", "Please enter your interests.")
             return
             
-        # Process interests - split by comma, strip whitespace, and convert to lowercase
+        # Process interests (split by comma, strip whitespace, and convert to lowercase)
         interests = [x.strip().lower() for x in interests_text.split(",") if x.strip()]
         # Validate that at least one interest was entered
         if not interests:
@@ -848,4 +848,5 @@ def main():
 
 # Entry point of the program
 if __name__ == "__main__":
+
     main()
